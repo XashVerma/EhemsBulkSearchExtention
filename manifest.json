@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "eHRMS Home Bulk Search (2-Phase)",
+  "version": "2.2",
+  "description": "Manav Sampada UP Bulk Search with 2-Phase Mobile and Departmental ID Fallback",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ehrms.upsdc.gov.in/ReportSummary/PublicReports/searchEmpList*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
